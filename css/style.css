@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close{
+    display: flex;
+    align-items: end;
+    margin-top: 90px;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.nav-item-home:hover{
+    background: #FCF6BD ;
+    border-radius: 20px;
+}
+.nav-item-sobre:hover{
+    background: #D0F4DE ;
+    border-radius: 20px;
+}
+
+.nav-item-posts:hover{
+    background: #A9DEF9 ;
+    border-radius: 20px;
+}
+
+.nav-item-pensamentos:hover{
+    background: #E4C1F9 ;
+    border-radius: 20px;
+}
+.nav-item-psi:hover{
+    background: #FF99C8 ;
+    border-radius: 20px;
+}
+.btn-outline:hover{
+    background: #D9D9D9;
+}
+
+body{
+    background: #EDEDE9;
+}
+
+.carrosel{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDE9;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #E4C1F9;
+}
+
+.image-content, .card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c077eb;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #c077eb;
+
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #E4C1F9;  
+}
+.card-image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #E4C1F9;
+    padding: 3px;
+    
+}
+
+.card-image .card-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #c077eb;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.description{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.button{
+    border: nome;
+    font-size: 16px;
+    color: #000000;
+    padding: 8px 16px;
+    background-color: #c077eb;
+    border-radius: 6px;
+    margin: 14px;   
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #b388cc;
+
+}
+
